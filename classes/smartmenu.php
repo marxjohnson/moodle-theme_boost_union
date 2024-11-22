@@ -991,6 +991,19 @@ class smartmenu {
     }
 
     /**
+     * Return options for the byadmin setting.
+     *
+     * @return array
+     */
+    public static function get_byadmin_options(): array {
+        return [
+            smartmenu::BYADMIN_ALL => get_string('smartmenusbyadmin_all', 'theme_boost_union'),
+            smartmenu::BYADMIN_ADMINS => get_string('smartmenusbyadmin_admins', 'theme_boost_union'),
+            smartmenu::BYADMIN_NONADMINS => get_string('smartmenusbyadmin_nonadmins', 'theme_boost_union'),
+        ];
+    }
+
+    /**
      * Return options for the operator setting.
      *
      * @return array
